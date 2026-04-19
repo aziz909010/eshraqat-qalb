@@ -2,61 +2,99 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>إشراقات قلب | استشارات عاطفية</title>
+<title>إشراقات قلب | استشارة عاطفية خاصة</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="استشارات عاطفية خاصة لمساعدتك على تحسين العلاقات واستعادة التوازن العاطفي بطريقة آمنة وسرية.">
 
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600;800&display=swap" rel="stylesheet">
 
 <style>
-body {
+body{
   margin:0;
   font-family:'Cairo',sans-serif;
-  background: linear-gradient(135deg,#0f172a,#1e293b);
+  background: radial-gradient(circle at top,#1e293b,#0f172a);
   color:white;
   text-align:center;
 }
 
-.hero {
-  padding:80px 20px;
+/* HERO */
+.hero{
+  padding:70px 20px 30px;
 }
 
-h1 {
-  font-size:40px;
+h1{
+  font-size:42px;
   margin-bottom:10px;
 }
 
-p {
-  color:#ddd;
+.sub{
+  color:#ccc;
   font-size:18px;
-  line-height:1.8;
-  max-width:600px;
-  margin:auto;
 }
 
-.box {
-  background:rgba(255,255,255,0.06);
+/* URGENCY */
+.urgency{
+  background:rgba(255,255,255,0.07);
+  padding:12px;
+  border-radius:15px;
+  max-width:500px;
+  margin:20px auto;
+  font-size:14px;
+}
+
+/* BOX */
+.box{
+  background:rgba(255,255,255,0.05);
   padding:20px;
-  margin:25px auto;
-  border-radius:20px;
+  margin:20px auto;
   max-width:600px;
-  backdrop-filter: blur(10px);
+  border-radius:20px;
+  backdrop-filter:blur(10px);
 }
 
-.btn {
+/* CTA BUTTON */
+.cta{
+  display:inline-block;
+  margin-top:25px;
   background:linear-gradient(45deg,#25D366,#128C7E);
-  padding:15px 30px;
+  padding:18px 35px;
   border-radius:50px;
   color:white;
   text-decoration:none;
-  display:inline-block;
-  margin-top:25px;
+  font-size:18px;
   font-weight:bold;
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+  animation:pulse 1.6s infinite;
 }
 
-.footer {
-  margin-top:40px;
-  font-size:12px;
-  color:#777;
+@keyframes pulse{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.05);}
+  100%{transform:scale(1);}
+}
+
+/* TRUST */
+.trust{
+  margin-top:20px;
+  font-size:13px;
+  color:#aaa;
+  line-height:1.6;
+}
+
+/* WHATSAPP FLOAT */
+.wa{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  padding:16px;
+  border-radius:50%;
+  text-decoration:none;
+  color:white;
+  font-size:20px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.4);
+  z-index:9999;
 }
 </style>
 </head>
@@ -66,31 +104,43 @@ p {
 <div class="hero">
 
 <h1>إشراقات قلب</h1>
+<p class="sub">استشارة عاطفية خاصة تساعدك على تحسين علاقاتك</p>
 
-<p>
-استشارات عاطفية خاصة تساعدك على فهم مشاعرك وتحسين علاقاتك بطريقة راقية وآمنة.
-</p>
+<div class="urgency">
+⚡ يتم قبول عدد محدود يومياً لضمان الجودة والخصوصية
+</div>
 
 <div class="box">
 <p>
-الكثير يبحث عن "جلب الحبيب"، لكن النجاح الحقيقي في العلاقات
-يأتي من الفهم والتواصل وبناء الثقة.
+إذا كنت تعاني من توتر في العلاقة أو رغبة في تحسين التواصل،
+نساعدك على فهم الوضع واتخاذ القرار الصحيح.
 </p>
 </div>
 
 <div class="box">
 <p>
-نقدم لك دعمًا عاطفيًا يساعدك على تجاوز المشاكل وبناء حياة مستقرة.
+الكثير يبحث عن “جلب الحبيب”، لكن الحل الحقيقي هو فهم المشاعر
+وبناء علاقة مستقرة قائمة على الوعي والثقة.
 </p>
 </div>
 
-<a class="btn" href="https://wa.me/905528077739?text=مرحبا%20اريد%20استشارة" target="_blank">
-تواصل عبر واتساب
+<a class="cta"
+href="https://wa.me/905528077739?text=مرحبا%20اريد%20استشارة%20عاطفية"
+target="_blank">
+🔥 احجز استشارتك الآن
 </a>
 
-<p class="footer">جميع الاستشارات بسرية تامة</p>
+<div class="trust">
+✔ سرية تامة  
+✔ رد سريع خلال دقائق  
+✔ استشارة شخصية موجهة لك فقط
+</div>
 
 </div>
+
+<a class="wa"
+href="https://wa.me/905528077739?text=مرحبا%20اريد%20استشارة"
+target="_blank">💬</a>
 
 
 </html>
