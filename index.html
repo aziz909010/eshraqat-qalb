@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>إشراقات قلب | استشارات خاصة</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin:0;
+  font-family:Arial;
+  background:linear-gradient(135deg,#0f172a,#1e293b);
+  color:white;
+  text-align:center;
+}
+.container { padding:40px; }
+
+h1 { font-size:32px; }
+p { color:#ddd; line-height:1.8; }
+
+.card {
+  background:rgba(255,255,255,0.05);
+  padding:20px;
+  border-radius:20px;
+  margin:30px auto;
+  max-width:500px;
+}
+
+input, textarea {
+  width:80%;
+  padding:12px;
+  margin:10px;
+  border-radius:10px;
+  border:none;
+}
+
+button {
+  background:#25D366;
+  color:white;
+  padding:15px 25px;
+  border:none;
+  border-radius:10px;
+  font-size:18px;
+}
+
+.whatsapp {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  padding:15px;
+  border-radius:50%;
+  text-decoration:none;
+  color:white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>إشراقات قلب</h1>
+
+<p>
+نساعدك على تحسين علاقتك وفهم مشاعرك بطريقة راقية وآمنة.
+</p>
+
+<div class="card">
+<p>
+الكثير يبحث عن "جلب الحبيب"، لكن الحل الحقيقي يبدأ من
+التواصل الصحيح وفهم الطرف الآخر.
+</p>
+</div>
+
+<!-- فورم الحجز -->
+<div class="card">
+
+<h2>احجز استشارة</h2>
+
+<input type="text" id="name" placeholder="الاسم">
+<input type="text" id="phone" placeholder="رقمك">
+<textarea id="msg" placeholder="اكتب مشكلتك"></textarea>
+
+<br>
+
+<button onclick="send()">إرسال عبر واتساب</button>
+
+</div>
+
+</div>
+
+<a class="whatsapp" href="https://wa.me/905528077739" target="_blank">💬</a>
+
+<script>
+function send(){
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let msg = document.getElementById("msg").value;
+
+  let text = `الاسم: ${name}%0Aرقم: ${phone}%0Aالمشكلة: ${msg}`;
+  window.open(`https://wa.me/905528077739?text=${text}`);
+}
+</script>
+
+</body>
+</html>
