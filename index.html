@@ -2,107 +2,95 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>إشراقات قلب | استشارات خاصة</title>
-
+<title>إشراقات قلب | استشارات عاطفية</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600;800&display=swap" rel="stylesheet">
 
 <style>
 body {
   margin:0;
-  font-family:Arial;
-  background:linear-gradient(135deg,#0f172a,#1e293b);
+  font-family:'Cairo',sans-serif;
+  background: linear-gradient(135deg,#0f172a,#1e293b);
   color:white;
   text-align:center;
 }
-.container { padding:40px; }
 
-h1 { font-size:32px; }
-p { color:#ddd; line-height:1.8; }
-
-.card {
-  background:rgba(255,255,255,0.05);
-  padding:20px;
-  border-radius:20px;
-  margin:30px auto;
-  max-width:500px;
+.hero {
+  padding:80px 20px;
 }
 
-input, textarea {
-  width:80%;
-  padding:12px;
-  margin:10px;
-  border-radius:10px;
-  border:none;
+h1 {
+  font-size:40px;
+  margin-bottom:10px;
 }
 
-button {
-  background:#25D366;
-  color:white;
-  padding:15px 25px;
-  border:none;
-  border-radius:10px;
+p {
+  color:#ddd;
   font-size:18px;
+  line-height:1.8;
+  max-width:600px;
+  margin:auto;
 }
 
-.whatsapp {
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  padding:15px;
-  border-radius:50%;
-  text-decoration:none;
+.box {
+  background:rgba(255,255,255,0.06);
+  padding:20px;
+  margin:25px auto;
+  border-radius:20px;
+  max-width:600px;
+  backdrop-filter: blur(10px);
+}
+
+.btn {
+  background:linear-gradient(45deg,#25D366,#128C7E);
+  padding:15px 30px;
+  border-radius:50px;
   color:white;
+  text-decoration:none;
+  display:inline-block;
+  margin-top:25px;
+  font-weight:bold;
+}
+
+.footer {
+  margin-top:40px;
+  font-size:12px;
+  color:#777;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="hero">
 
 <h1>إشراقات قلب</h1>
 
 <p>
-نساعدك على تحسين علاقتك وفهم مشاعرك بطريقة راقية وآمنة.
+استشارات عاطفية خاصة تساعدك على فهم مشاعرك وتحسين علاقاتك بطريقة راقية وآمنة.
 </p>
 
-<div class="card">
+<div class="box">
 <p>
-الكثير يبحث عن "جلب الحبيب"، لكن الحل الحقيقي يبدأ من
-التواصل الصحيح وفهم الطرف الآخر.
+الكثير يبحث عن "جلب الحبيب"، لكن النجاح الحقيقي في العلاقات
+يأتي من الفهم والتواصل وبناء الثقة.
 </p>
 </div>
 
-<!-- فورم الحجز -->
-<div class="card">
-
-<h2>احجز استشارة</h2>
-
-<input type="text" id="name" placeholder="الاسم">
-<input type="text" id="phone" placeholder="رقمك">
-<textarea id="msg" placeholder="اكتب مشكلتك"></textarea>
-
-<br>
-
-<button onclick="send()">إرسال عبر واتساب</button>
-
+<div class="box">
+<p>
+نقدم لك دعمًا عاطفيًا يساعدك على تجاوز المشاكل وبناء حياة مستقرة.
+</p>
 </div>
 
+<a class="btn" href="https://wa.me/905528077739?text=مرحبا%20اريد%20استشارة" target="_blank">
+تواصل عبر واتساب
+</a>
+
+<p class="footer">جميع الاستشارات بسرية تامة</p>
+
 </div>
-
-<a class="whatsapp" href="https://wa.me/905528077739" target="_blank">💬</a>
-
-<script>
-function send(){
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let msg = document.getElementById("msg").value;
-
-  let text = `الاسم: ${name}%0Aرقم: ${phone}%0Aالمشكلة: ${msg}`;
-  window.open(`https://wa.me/905528077739?text=${text}`);
-}
-</script>
 
 </body>
 </html>
